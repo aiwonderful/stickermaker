@@ -45,7 +45,7 @@ defmodule StickerWeb.ReplicateWebhookController do
           if rating <= 5 do
             gen_sticker(prompt)
           else
-            broadcast(user_id, {:moderation_failed, "AI generated safety rating:  {3}/10")})
+            broadcast(user_id, {:moderation_failed, "AI generated safety rating:  {3}/10"})
           end
 
         "failed" ->
